@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <!-- Lorestone Games hero backdrop (vector, original). Night sky warming to amber behind the standing stone, layered
+       mountain ridges with amber rim light, drifting mist and a dark lake edge. Pairs with brand/lorestone-logo-transparent. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050404"/><stop offset=".45" stop-color="#110c08"/><stop offset=".7" stop-color="#2a1a0c"/><stop offset="1" stop-color="#0b0806"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".55" r=".55">
+      <stop offset="0" stop-color="#ffb14a" stop-opacity=".55"/><stop offset=".25" stop-color="#e3842a" stop-opacity=".28"/><stop offset=".6" stop-color="#7a3e12" stop-opacity=".1"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98a3a" stop-opacity=".55"/><stop offset=".08" stop-color="#d98a3a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0c48a" stop-opacity="0"/><stop offset=".5" stop-color="#f0c48a" stop-opacity=".09"/><stop offset="1" stop-color="#f0c48a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f0b08" stop-opacity="0"/><stop offset=".25" stop-color="#0d0907"/><stop offset="1" stop-color="#050403"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <ellipse cx="800" cy="500" rx="760" ry="430" fill="url(#sun)"/>
+  <!-- faint stars high up -->
+  <g fill="#f7e2c0">
+    <circle cx="140" cy="80" r="1.2" opacity=".5"/><circle cx="310" cy="140" r="1" opacity=".35"/><circle cx="460" cy="60" r="1.4" opacity=".45"/><circle cx="1180" cy="90" r="1.2" opacity=".5"/>
+    <circle cx="1330" cy="160" r="1" opacity=".35"/><circle cx="1480" cy="70" r="1.4" opacity=".4"/><circle cx="980" cy="50" r="1" opacity=".3"/><circle cx="640" cy="120" r="1" opacity=".3"/>
+    <circle cx="1060" cy="170" r="1.1" opacity=".3"/><circle cx="220" cy="210" r="1" opacity=".25"/><circle cx="1420" cy="230" r="1" opacity=".25"/>
+  </g>
+  <!-- far ridge -->
+  <path d="M0 560 L90 500 L170 530 L260 440 L330 470 L420 400 L500 455 L560 430 L640 500 L720 470 L800 520 L880 470 L960 500 L1040 420 L1120 455 L1200 390 L1290 450 L1360 420 L1450 480 L1530 440 L1600 470 V900 H0Z" fill="#1b130d"/>
+  <path d="M0 560 L90 500 L170 530 L260 440 L330 470 L420 400 L500 455 L560 430 L640 500 L720 470 L800 520 L880 470 L960 500 L1040 420 L1120 455 L1200 390 L1290 450 L1360 420 L1450 480 L1530 440 L1600 470 V900 H0Z" fill="url(#rim)"/>
+  <rect y="470" width="1600" height="140" fill="url(#mist)"/>
+  <!-- near ridges: tall crags at the sides frame the centre -->
+  <path d="M0 640 L0 300 L40 250 L70 280 L110 190 L150 230 L190 160 L230 260 L280 300 L330 380 L400 460 L470 540 L540 600 L600 650 L760 900 H0Z" fill="#0f0b08"/>
+  <path d="M0 300 L40 250 L70 280 L110 190 L150 230 L190 160 L230 260 L280 300 L330 380 L400 460" fill="none" stroke="#c9802f" stroke-opacity=".35" stroke-width="2"/>
+  <path d="M1600 640 L1600 280 L1560 230 L1520 270 L1480 170 L1440 220 L1390 150 L1350 250 L1300 300 L1250 380 L1180 460 L1110 540 L1040 600 L980 650 L840 900 H1600Z" fill="#0f0b08"/>
+  <path d="M1600 280 L1560 230 L1520 270 L1480 170 L1440 220 L1390 150 L1350 250 L1300 300 L1250 380 L1180 460" fill="none" stroke="#c9802f" stroke-opacity=".35" stroke-width="2"/>
+  <!-- pines on the near ridges -->
+  <g fill="#0a0806">
+    <path d="M60 560 l18 -70 l18 70z M100 590 l14 -56 l14 56z M150 600 l20 -80 l20 80z M210 620 l14 -54 l14 54z M260 640 l18 -66 l18 66z M330 660 l12 -46 l12 46z"/>
+    <path d="M1500 560 l18 -70 l18 70z M1460 590 l14 -56 l14 56z M1400 600 l20 -80 l20 80z M1360 620 l14 -54 l14 54z M1300 640 l18 -66 l18 66z M1250 660 l12 -46 l12 46z"/>
+  </g>
+  <rect y="560" width="1600" height="200" fill="url(#mist)"/>
+  <!-- lake and its glow -->
+  <path d="M0 670 Q400 650 800 660 T1600 670 V900 H0Z" fill="url(#lake)"/>
+  <ellipse cx="800" cy="735" rx="260" ry="18" fill="#ffb14a" opacity=".22" filter="url(#soft)"/>
+  <g stroke="#f2b46a" stroke-linecap="round" opacity=".35">
+    <path d="M760 738 h80 M780 754 h40" stroke-width="1.5"/>
+  </g>
+</svg>

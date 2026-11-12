@@ -17,10 +17,16 @@ img{max-width:100%;height:auto;display:block}
 .top nav{display:flex;gap:20px;font-size:16px}
 .top nav a{color:var(--ink);text-decoration:none;opacity:.85}.top nav a:hover{opacity:1;color:var(--gold)}
 
-/* Hero: the official banner */
-.hero{position:relative;background:#050403}
-.hero picture,.hero img{display:block;width:100%;height:auto}
-.hero img{max-height:78vh;object-fit:cover;object-position:center}
+/* Hero: the official logo (transparent, never enlarged) over a vector night-and-amber backdrop with rising embers. */
+.hero{position:relative;overflow:hidden;min-height:min(86vh,820px);display:grid;place-items:center;padding:36px 20px 28px;
+ background:#070504 url("img/hero-backdrop.svg") center bottom/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:140px;background:linear-gradient(180deg,transparent,var(--bg));pointer-events:none}
+.hero h1{position:relative;z-index:1;margin:0;line-height:0}
+.hero-logo{width:min(560px,82vw);height:auto;filter:drop-shadow(0 18px 40px #000c) drop-shadow(0 0 60px #ffae3d2e)}
+.embers{position:absolute;inset:0;pointer-events:none}
+.embers i{position:absolute;left:var(--x);bottom:-10px;width:calc(4px*var(--s));height:calc(4px*var(--s));border-radius:50%;background:#ffc06a;box-shadow:0 0 10px 2px #ff9a2e99;opacity:0;animation:ember var(--d) linear var(--delay) infinite}
+@keyframes ember{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}70%{opacity:.6}100%{transform:translate(calc(40px*var(--s)),-90vh);opacity:0}}
+@media (prefers-reduced-motion:reduce){.embers{display:none}}
 .intro{padding:34px 0 0;text-align:center}
 .intro p{max-width:38em;margin:0 auto;font-size:clamp(1.1rem,2.3vw,1.35rem);color:#eadfc8}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -70,3 +76,5 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 .brand span{white-space:nowrap}
 @media (max-width:400px){.brand span{font-size:15px}.top nav{gap:10px;font-size:14px}}
 @media (max-width:440px){.brand span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media (max-width:600px){.hero{min-height:auto;padding:56px 16px 70px}}
+.shots img{transition:transform .25s ease,box-shadow .25s ease}.shots a:hover img{transform:translateY(-3px);box-shadow:0 12px 30px #000a,0 0 0 1px #e9b86655}

@@ -7,7 +7,8 @@ The Lorestone Games studio website, served by GitHub Pages from this repository.
 - `style.css` and `fonts/`: EB Garamond and Cinzel Decorative, under the SIL Open Font License 1.1 (licence files included).
 - `brand/`: the official Lorestone Games logos (banner, scene, dark logo, round emblem, one-colour logo).
 - `img/icon-32.png` and `img/icon-180.png`: browser icons made from the round emblem.
-- `img/*.jpg`: art and real screenshots from JournalScape.
+- `img/hero-backdrop.svg`: the vector hero backdrop. `brand/lorestone-logo-transparent.*`: the official logo with its black background removed (keyed from lorestone-logo-dark), shown over the backdrop at no more than its natural size.
+- `img/js-*.jpg`: real JournalScape screenshots in different themes (tools/showcase-shots.cjs in the app repo).
 
 ## Custom domain (not yet set)
 
