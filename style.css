@@ -78,3 +78,16 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 @media (max-width:440px){.brand span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 @media (max-width:600px){.hero{min-height:auto;padding:56px 16px 70px}}
 .shots img{transition:transform .25s ease,box-shadow .25s ease}.shots a:hover img{transform:translateY(-3px);box-shadow:0 12px 30px #000a,0 0 0 1px #e9b86655}
+
+/* Simplified home (owner, 12 November 2026): the logo, then one card per game. */
+.home .hero{min-height:min(78vh,760px)}
+.games{padding:10px 0 70px}
+.games .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),560px));justify-content:center;gap:28px}
+.game-card{display:block;border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);box-shadow:0 20px 50px #000a;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.game-card img{width:100%;height:auto}
+.game-card:hover,.game-card:focus-visible{transform:translateY(-4px);border-color:#e9b86699;box-shadow:0 26px 60px #000c,0 0 30px #ffae3d26}
+.game-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px}
+.game-meta .tag{margin:0}
+.game-go{font:600 15px/1.2 system-ui,sans-serif;color:var(--gold)}
+.game-meta .tag{white-space:nowrap}
+@media (max-width:480px){.game-meta{flex-wrap:wrap}.game-go{font-size:14px}}
