@@ -10,9 +10,9 @@ The Lorestone Games studio website, served by GitHub Pages from this repository.
 - `img/hero-backdrop.svg`: the vector hero backdrop. `brand/lorestone-logo-transparent.*`: the official logo with its black background removed (keyed from lorestone-logo-dark), shown over the backdrop at no more than its natural size.
 - `img/js-*.jpg`: real JournalScape screenshots in different themes (tools/showcase-shots.cjs in the app repo).
 
-## Custom domain (not yet set)
+## Custom domain
 
-The site is live at https://lorestone-games.github.io/. To move it to lorestonegames.com:
+The site is live at https://lorestonegames.com/ (set 12 November 2026). DNS at Porkbun:
 
 1. Add the Porkbun DNS records:
    - **A records for `lorestonegames.com`:** 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153.
